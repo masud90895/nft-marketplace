@@ -12,7 +12,9 @@ const Footer = () => {
           <div className="space-y-8">
             {/* NFTERS */}
 
-            <h3 className="text-2xl font-bold text-indigo-600">NFTERS</h3>
+            <h3 className="text-2xl font-bold text-indigo-600 font-ultra">
+              NFTERS
+            </h3>
 
             <p className="text-sm leading-6 text-gray-600">
               The World&apos;s first and largest digital Marketplace for crypto
@@ -74,7 +76,7 @@ const Footer = () => {
                 Stay In The Loop
               </h3>
               <p className="mt-2 text-sm leading-6 text-gray-600">
-               Join our mailing list to stay up to date on the latest news and
+                Join our mailing list to stay up to date on the latest news and
                 announcements.
               </p>
               <form className="mt-6 sm:flex sm:max-w-md">

@@ -14,13 +14,15 @@ const Navbar = () => {
     typeof window !== "undefined" ? window.location.pathname : "";
 
   return (
-    <Disclosure as="nav" className="bg-white shadow">
+    <Disclosure as="nav" className="bg-white shadow border-b  ">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
             <div className="flex h-16 justify-between items-center">
               <div className=" px-2 lg:px-0 flex items-center">
-                <h3 className="text-2xl font-bold text-indigo-600">NFTERS</h3>
+                <h3 className="text-2xl font-bold text-indigo-600 font-ultra">
+                  NFTERS
+                </h3>
                 <div className="hidden lg:ml-6 lg:flex lg:space-x-8">
                   {NavbarList.map((item: INavbar) => (
                     <Link
@@ -65,11 +67,11 @@ const Navbar = () => {
 
               <div className="hidden lg:ml-6 lg:flex lg:space-x-8 ">
                 <Link href="/upload">
-                  <button className=" px-4 py-1 border border-indigo-600 text-base font-medium rounded-xl shadow-sm text-white bg-indigo-600 hover:bg-white hover:text-indigo-600 transition-all ease-in-out duration-500 text-[12px]">
+                  <button className=" px-4 py-1 border border-indigo-600 text-base font-medium rounded-full shadow-sm text-white bg-indigo-600 hover:bg-white hover:text-indigo-600 transition-all ease-in-out duration-500 text-[12px]">
                     Upload
                   </button>
                 </Link>
-                <button className="px-4 py-1 border border-indigo-600 text-base font-medium rounded-xl shadow-sm hover:text-white hover:bg-indigo-600 bg-white text-indigo-600 transition-all ease-in-out duration-500 text-[12px]">
+                <button className="px-4 py-1 border border-indigo-600 text-base font-medium rounded-full shadow-sm hover:text-white hover:bg-indigo-600 bg-white text-indigo-600 transition-all ease-in-out duration-500 text-[12px]">
                   Connect Wallet
                 </button>
               </div>
