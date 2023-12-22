@@ -85,3 +85,49 @@
     height: 300px;
   }
 }
+
+.circle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 100vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  position: absolute;
+  width: 50px;
+  height: 80px;
+
+  background: url("https://upload.wikimedia.org/wikipedia/commons/d/d0/Eth-diamond-rainbow.png");
+  background-size: cover;
+  z-index: 500;
+
+  border-radius: 100vmax;
+  background-position: center;
+}
+
+.text {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  font-family: consolas;
+  color: #000;
+  font-size: 12px;
+  animation: textRotation 8s linear infinite;
+}
+
+@keyframes textRotation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.text span {
+  position: absolute !important;
+  left: 50% !important;
+  font-size: 12px !important;
+  transform-origin: 0 100px !important;
+}
